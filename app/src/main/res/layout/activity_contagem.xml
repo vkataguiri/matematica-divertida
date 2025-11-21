@@ -7,4 +7,55 @@
     android:layout_height="match_parent"
     tools:context=".ContagemActivity">
 
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvPerguntaContagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carregando pergunta..."
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <ImageView
+            android:id="@+id/ivImagem"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="Imagem do desafio"
+            android:scaleType="fitCenter"/>
+
+        <Button
+            android:id="@+id/btnOpcao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 1"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnOpcao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 2"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnOpcao3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 3"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
