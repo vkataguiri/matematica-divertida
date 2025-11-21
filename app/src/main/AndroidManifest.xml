@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MatemáticaDivertida">
         <activity
+            android:name=".MaiorNumeroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AritmeticaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContagemActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
