@@ -41,23 +41,84 @@ class ContagemActivity : AppCompatActivity() {
         // Banco de questões: Várias perguntas podem usar a mesma imagem (ex: img_carros)
         // ATENÇÃO: Substitua R.drawable.ic_launcher_foreground pelas suas imagens reais (ex: R.drawable.img_carros)
         private val todasAsQuestoes = listOf(
-            // Exemplo 1: Imagem de Carros (usando ícone padrão como placeholder)
-            QuestaoContagem(R.drawable.avenida, "Quantos carros há ao todo?", 5),
-            QuestaoContagem(R.drawable.ic_launcher_foreground, "Quantos carros são AZUIS?", 2),
+            // Exemplo 1: Imagem de Carros
+            QuestaoContagem(R.drawable.avenida, "Quantos táxis amarelos estão na imagem?", 4),
+            QuestaoContagem(R.drawable.avenida, "Quantos carros de polícia você encontra?", 2),
+            QuestaoContagem(R.drawable.avenida, "Quantos caminhões de bombeiros existem?", 2),
+            QuestaoContagem(R.drawable.avenida, "Quantos semáforos de trânsito você vê?", 3),
+            QuestaoContagem(R.drawable.avenida, "Quantas placas de 'PARE' (STOP) existem?", 1),
 
-            // Exemplo 2: Imagem de Frutas
-            QuestaoContagem(R.drawable.ic_launcher_foreground, "Quantas frutas você vê?", 8),
-            QuestaoContagem(R.drawable.ic_launcher_foreground, "Quantas maçãs existem?", 3),
+            // Perguntas sobre a fábrica
+            QuestaoContagem(R.drawable.fabrica, "Quantos robôs amarelos estão trabalhando?", 5),
+            QuestaoContagem(R.drawable.fabrica, "Quantas empilhadeiras azuis você vê?", 3),
+            QuestaoContagem(R.drawable.fabrica, "Quantos caminhões VERDES estão lá fora?", 2),
+            QuestaoContagem(R.drawable.fabrica, "Quantos caminhões estão lá fora ao todo?", 4),
+            QuestaoContagem(R.drawable.fabrica, "Quantas engrenagens cinzas estão nas paredes?", 6),
 
-            // Exemplo 3: Imagem de Bolas
-            QuestaoContagem(R.drawable.ic_launcher_foreground, "Conte todas as bolas:", 10),
+            // Exemplo 3: Imagem da fazendo
+            QuestaoContagem(R.drawable.fazenda, "Quantos patos estão nadando na lagoa?", 5),
+            QuestaoContagem(R.drawable.fazenda, "Quantos pássaros azuis estão no galho?", 4),
+            QuestaoContagem(R.drawable.fazenda, "Quantos coelhos você vê na grama?", 3),
+            QuestaoContagem(R.drawable.fazenda, "Quantos porcos estão no chiqueiro?", 4),
+            QuestaoContagem(R.drawable.fazenda, "Quantas ovelhas existem ao todo?", 3),
 
-            // Adicione mais variações para suas 10 imagens...
-            QuestaoContagem(R.drawable.ic_launcher_foreground, "Quantos animais na floresta?", 4),
-            QuestaoContagem(R.drawable.ic_launcher_foreground, "Quantos pássaros estão voando?", 1),
-            QuestaoContagem(R.drawable.ic_launcher_foreground, "Total de itens na imagem:", 6),
-            QuestaoContagem(R.drawable.ic_launcher_foreground, "Quantas estrelas amarelas?", 7),
-            QuestaoContagem(R.drawable.ic_launcher_foreground, "Quantos peixes no aquário?", 9)
+            //sala de aula
+            QuestaoContagem(R.drawable.saladeaula, "Quantos relógios estão na parede?", 3),
+            QuestaoContagem(R.drawable.saladeaula, "Quantas mochilas estão penduradas?", 5),
+            QuestaoContagem(R.drawable.saladeaula, "Quantos gatos estão dormindo na sala?", 2),
+            QuestaoContagem(R.drawable.saladeaula, "Quantos globos terrestres existem na sala?", 3),
+            QuestaoContagem(R.drawable.saladeaula,"Quantos desenhos estão no quadro de avisos?", 8),
+
+            //Praia
+            QuestaoContagem(R.drawable.praia, "Quantos golfinhos estão pulando no mar?", 3),
+            QuestaoContagem(R.drawable.praia, "Quantos caranguejos vermelhos estão na areia?", 2),
+            QuestaoContagem(R.drawable.praia, "Quantas pranchas de surf estão paradas na areia?", 2),
+            QuestaoContagem(R.drawable.praia, "Quantas crianças estão jogando vôlei?", 4),
+            QuestaoContagem(R.drawable.praia, "Quantos faróis existem ao fundo?", 1),
+
+            //Indio
+            QuestaoContagem(R.drawable.indio, "Quantas araras coloridas estão voando?", 3),
+            QuestaoContagem(R.drawable.indio, "Quantos macacos estão nas árvores?", 5),
+            QuestaoContagem(R.drawable.indio, "Quantas capivaras estão na margem do rio?", 3),
+            QuestaoContagem(R.drawable.indio, "Quantos cocares estão pendurados na oca?", 4),
+            QuestaoContagem(R.drawable.indio, "Quantas onças estão deitadas na grama?", 2),
+
+            //Parque
+            QuestaoContagem(R.drawable.parque, "Quantos patos estão nadando no lago?", 3),
+            QuestaoContagem(R.drawable.parque, "Quantas crianças estão nos balanços?", 3),
+            QuestaoContagem(R.drawable.parque, "Quantos cachorros estão passeando no parque?", 3),
+            QuestaoContagem(R.drawable.parque, "Quantas crianças estão andando de bicicleta?", 2),
+            QuestaoContagem(R.drawable.parque, "Quantas pipas estão voando no céu?", 1),
+
+            //fundo do mar
+            QuestaoContagem(R.drawable.fundodomar, "Quantas tartarugas marinhas estão na areia?", 2),
+            QuestaoContagem(R.drawable.fundodomar, "Quantos peixes azuis (tipo a Dory) estão nadando?", 3),
+            QuestaoContagem(R.drawable.fundodomar, "Quantos polvos estão escondidos nas tocas?", 3),
+            QuestaoContagem(R.drawable.fundodomar, "Quantos cavalos-marinhos amarelos você vê?", 6),
+            QuestaoContagem(R.drawable.fundodomar, "Quantos peixes listrados amarelos (canto superior)?", 3),
+
+            //game
+            QuestaoContagem(R.drawable.games, "Quantas televisões estão ligadas?", 4),
+            QuestaoContagem(R.drawable.games, "Quantos posters de jogos há na parede?", 4),
+            QuestaoContagem(R.drawable.games, "Quantas crianças estão no sofá vermelho?", 3),
+            QuestaoContagem(R.drawable.games, "Quantos posters de Minecraft existem?", 2),
+            QuestaoContagem(R.drawable.games, "Quantos puffs amarelos existem?", 1),
+
+            // Doces
+            QuestaoContagem(R.drawable.doces, "Quantos donuts estão nas prateleiras?", 6),
+            QuestaoContagem(R.drawable.doces, "Quantos carrinhos de sorvete você vê?", 1),
+            QuestaoContagem(R.drawable.doces, "Quantos bolos grandes estão na vitrine?", 2),
+            QuestaoContagem(R.drawable.doces, "Quantos sorvetes de casquinha estão no carrinho?", 3),
+            QuestaoContagem(R.drawable.doces, "Quantos ursinhos de goma NÃO são amarelos?", 4),
+
+            // pets
+            QuestaoContagem(R.drawable.pets, "Quantos cachorros estão deitados na almofada?", 1),
+            QuestaoContagem(R.drawable.pets, "Quantos coelhos estão pulando na grama?", 2),
+            QuestaoContagem(R.drawable.pets, "Quantos pássaros você vê nas gaiolas?", 3),
+            QuestaoContagem(R.drawable.pets, "Quantos peixes estão dentro do aquário?", 5),
+            QuestaoContagem(R.drawable.pets, "Quantos hamsters estão brincando na cena?", 6),
+
+
         )
 
         private var questoesDaRodada = listOf<QuestaoContagem>()
