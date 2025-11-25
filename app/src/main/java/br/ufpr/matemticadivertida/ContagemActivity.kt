@@ -225,14 +225,10 @@ class ContagemActivity : AppCompatActivity() {
     }
 
     private fun mostrarResultadoFinal() {
-        // Evita divisão por zero se TOTAL_PERGUNTAS fosse 0 (segurança)
-        val nota = if (TOTAL_PERGUNTAS > 0) (acertos * 100) / TOTAL_PERGUNTAS else 0
-
-        AlertDialog.Builder(this)
-            .setTitle("Fim de Jogo")
-            .setMessage("Você acertou $acertos de $TOTAL_PERGUNTAS.\nNota: $nota")
-            .setPositiveButton("Voltar") { _, _ -> finish() }
-            .setCancelable(false)
-            .show()
+        val intent = android.content.Intent(this, ResultadoActivity::class.java)
+        intent.putExtra("ACERTOS", acertos)
+        intent.putExtra("TOTAL", TOTAL_PERGUNTAS)
+        startActivity(intent)
+        finish()
     }
 }
