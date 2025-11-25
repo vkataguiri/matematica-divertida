@@ -1,5 +1,6 @@
 package br.ufpr.matemticadivertida
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -14,14 +15,13 @@ import kotlin.random.Random
 
 class MaiorNumeroActivity : AppCompatActivity() {
 
-    // Componentes da Interface
     private lateinit var tvDigito1: TextView
     private lateinit var tvDigito2: TextView
     private lateinit var tvDigito3: TextView
     private lateinit var etResposta: TextInputEditText
     private lateinit var btnVerificar: Button
 
-    // Variáveis de controle do jogo
+
     private var respostaCorreta: Int = 0
     private var rodadaAtual = 1
     private var acertos = 0
@@ -113,15 +113,10 @@ class MaiorNumeroActivity : AppCompatActivity() {
     }
 
     private fun mostrarResultadoFinal() {
-        val nota = (acertos * 100) / TOTAL_RODADAS
-
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Fim de Jogo")
-        builder.setMessage("Você acertou $acertos de $TOTAL_RODADAS rodadas.\nSua nota: $nota")
-        builder.setCancelable(false)
-        builder.setPositiveButton("Voltar ao Menu") { _, _ ->
-            finish()
-        }
-        builder.show()
+        val intent = Intent(this, ResultadoActivity::class.java)
+        intent.putExtra("ACERTOS", acertos)
+        intent.putExtra("TOTAL", TOTAL_RODADAS)
+        startActivity(intent)
+        finish()
     }
 }
