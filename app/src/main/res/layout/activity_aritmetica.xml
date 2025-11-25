@@ -3,17 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp">
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#E1F5FE">
 
-    <TextView
-        android:id="@+id/tvTitulo"
+    <LinearLayout
+        android:id="@+id/headerContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aritmética Básica"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="32dp"/>
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="100dp"  android:layout_height="100dp" android:src="@drawable/icon_aritmetica"
+            android:scaleType="centerInside"
+            android:background="@drawable/circulo_azul"
+            android:padding="18dp"        android:layout_marginEnd="16dp"
+            android:contentDescription="Ícone de Aritmética Básica" />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aritmética Básica"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#0288D1"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tvPergunta"
@@ -21,6 +41,7 @@
         android:layout_height="wrap_content"
         android:text="X + Y = ?"
         android:textSize="48sp"
+        android:textColor="#0288D1"
         android:layout_marginBottom="24dp"/>
 
     <EditText
@@ -30,6 +51,7 @@
         android:hint="Digite sua resposta"
         android:inputType="numberSigned"
         android:textSize="24sp"
+        android:textColor="#0288D1"
         android:gravity="center"
         android:layout_marginBottom="24dp"/>
 
@@ -38,6 +60,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Responder"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:backgroundTint="#0288D1"
+        android:textColor="@android:color/white"/>
 
 </LinearLayout>

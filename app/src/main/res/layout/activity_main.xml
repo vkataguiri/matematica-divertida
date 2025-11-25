@@ -1,40 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp">
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@color/azul_claro_fundo">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Matemática Divertida"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="48dp"/>
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp">
+
+        <ImageView
+            android:layout_width="80dp"  android:layout_height="80dp" android:src="@drawable/math"
+            android:scaleType="centerInside"
+            android:background="@drawable/circulo_azul"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Ícone de Matemática" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Matemática Divertida"
+            android:textColor="@color/azul_escuro_texto"
+            android:textSize="34sp" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnContagem"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="Jogo de Contagem"
         android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold"
+        android:textColor="@color/branco"
+        android:backgroundTint="@color/azul_escuro_texto"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/icon_contagem"
+        app:iconSize="36dp"          app:iconTint="@null" />
 
     <Button
         android:id="@+id/btnAritmetica"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="Aritmética Básica"
         android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold"
+        android:textColor="@color/branco"
+        android:backgroundTint="@color/azul_escuro_texto"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/icon_aritmetica"
+        app:iconSize="36dp"          app:iconTint="@null" />
 
     <Button
         android:id="@+id/btnMaiorNumero"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="Maior Número"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/branco"
+        android:backgroundTint="@color/azul_escuro_texto"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/icon_maior_numero"
+        app:iconSize="36dp"          app:iconTint="@null" />
 
 </LinearLayout>
