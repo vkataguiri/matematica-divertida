@@ -50,15 +50,28 @@ class AritmeticaActivity : AppCompatActivity() {
 
         etResposta.text.clear()
 
-        num1 = Random.nextInt(0, 10)
-        num2 = Random.nextInt(0, 10)
+        // Gera os números temporariamente
+        var val1 = Random.nextInt(0, 10)
+        var val2 = Random.nextInt(0, 10)
         val isPlus = Random.nextBoolean()
 
         if (isPlus) {
             operation = "+"
+            num1 = val1
+            num2 = val2
             correctAnswer = num1 + num2
         } else {
             operation = "-"
+
+            //Lógica Anti-negativo
+            if (val1 < val2) {
+                num1 = val2
+                num2 = val1
+            } else {
+                num1 = val1
+                num2 = val2
+            }
+
             correctAnswer = num1 - num2
         }
 
@@ -99,15 +112,10 @@ class AritmeticaActivity : AppCompatActivity() {
     }
 
     private fun showFinalResult() {
-        val score = (correctAnswers * 100) / TOTAL_QUESTIONS
-
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Fim de Jogo")
-        builder.setMessage("Você acertou $correctAnswers perguntas de um total de $TOTAL_QUESTIONS perguntas. Sua nota foi: $score")
-        builder.setPositiveButton("Voltar ao Menu") { dialog, _ ->
-            finish()
-        }
-        builder.setCancelable(false)
-        builder.show()
-     }
+        val intent = android.content.Intent(this, ResultadoActivity::class.java)
+        intent.putExtra("ACERTOS", correctAnswers)
+        intent.putExtra("TOTAL", TOTAL_QUESTIONS)
+        startActivity(intent)
+        finish()
+    }
 }

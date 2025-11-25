@@ -135,16 +135,12 @@ class MaiorNumeroActivity : AppCompatActivity() {
             }
 
             private fun mostrarResultadoFinal() {
-                val nota = (acertos * 100) / TOTAL_RODADAS
-
-                AlertDialog.Builder(this)
-                    .setTitle("Fim de Jogo")
-                    .setMessage("Você acertou $acertos de $TOTAL_RODADAS rodadas.\nSua nota: $nota")
-                    .setCancelable(false)
-                    .setPositiveButton("Voltar ao Menu") { _, _ ->
-                        finish() // Fecha a Activity e volta para a anterior
-                    }
-                    .show()
+                // Redireciona para a nova tela de ResultadoActivity que criamos
+                val intent = android.content.Intent(this, ResultadoActivity::class.java)
+                intent.putExtra("ACERTOS", acertos)
+                intent.putExtra("TOTAL", TOTAL_RODADAS)
+                startActivity(intent)
+                finish()
             }
         }
     }
