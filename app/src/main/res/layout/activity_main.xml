@@ -43,7 +43,7 @@
         android:textColor="@color/branco"
         android:backgroundTint="@color/azul_escuro_texto"
         android:layout_marginBottom="16dp"
-        app:cornerRadius="12dp"
+        app:cornerRadius="20dp"
         app:icon="@drawable/icon_contagem"
         app:iconSize="36dp"          app:iconTint="@null" />
 
@@ -57,7 +57,7 @@
         android:textColor="@color/branco"
         android:backgroundTint="@color/azul_escuro_texto"
         android:layout_marginBottom="16dp"
-        app:cornerRadius="12dp"
+        app:cornerRadius="20dp"
         app:icon="@drawable/icon_aritmetica"
         app:iconSize="36dp"          app:iconTint="@null" />
 
@@ -70,7 +70,7 @@
         android:textStyle="bold"
         android:textColor="@color/branco"
         android:backgroundTint="@color/azul_escuro_texto"
-        app:cornerRadius="12dp"
+        app:cornerRadius="20dp"
         app:icon="@drawable/icon_maior_numero"
         app:iconSize="36dp"          app:iconTint="@null" />
 
