@@ -44,8 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:gravity="center"
-        android:text="Carregando pergunta..."
-        android:textSize="20sp"
+        android:text="Carregando \npergunta..." android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#0288D1"/>
 
