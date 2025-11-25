@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"  android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
@@ -15,24 +16,22 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_marginBottom="32dp"
-        android:layout_marginTop="16dp">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/icon_contagem"
-            android:scaleType="centerInside"
-            android:background="@drawable/circulo_azul"
-            android:padding="18dp"
-            android:layout_marginEnd="16dp"
-            android:contentDescription="Ícone de Contagem" />
+        android:layout_marginTop="32dp"> <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_contagem"
+        android:scaleType="centerInside"
+        android:background="@drawable/circulo_azul"
+        android:padding="12dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Ícone de Contagem" />
 
         <TextView
             android:id="@+id/tvTituloContagem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jogo de Contagem"
-            android:textSize="34sp"
+            android:textSize="26sp"
             android:textStyle="bold"
             android:textColor="#0288D1"
             android:gravity="center_vertical"/>
@@ -46,44 +45,44 @@
         android:layout_marginBottom="24dp"
         android:gravity="center"
         android:text="Carregando pergunta..."
-        android:textSize="22sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#0288D1"/>
 
     <ImageView
         android:id="@+id/ivImagem"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:layout_marginBottom="32dp"
         android:contentDescription="Imagem do desafio"
         android:scaleType="fitCenter"/>
 
     <Button
         android:id="@+id/btnOpcao1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
         android:text="Opção 1"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:backgroundTint="#0288D1"
         android:textColor="@android:color/white"
         android:layout_marginBottom="8dp"/>
 
     <Button
         android:id="@+id/btnOpcao2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
         android:text="Opção 2"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:backgroundTint="#0288D1"
         android:textColor="@android:color/white"
         android:layout_marginBottom="8dp"/>
 
     <Button
         android:id="@+id/btnOpcao3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
         android:text="Opção 3"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:backgroundTint="#0288D1"
         android:textColor="@android:color/white"/>
 

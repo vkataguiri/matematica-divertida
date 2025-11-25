@@ -14,22 +14,19 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_marginBottom="48dp"
-        android:layout_marginTop="16dp">
-
-        <ImageView
-            android:layout_width="100dp"  android:layout_height="100dp" android:src="@drawable/icon_aritmetica"
-            android:scaleType="centerInside"
-            android:background="@drawable/circulo_azul"
-            android:padding="18dp"        android:layout_marginEnd="16dp"
-            android:contentDescription="Ícone de Aritmética Básica" />
+        android:layout_marginTop="32dp"> <ImageView
+        android:layout_width="60dp"  android:layout_height="60dp" android:src="@drawable/icon_aritmetica"
+        android:scaleType="centerInside"
+        android:background="@drawable/circulo_azul"
+        android:padding="12dp"        android:layout_marginEnd="16dp"
+        android:contentDescription="Ícone de Aritmética Básica" />
 
         <TextView
             android:id="@+id/tvTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Aritmética Básica"
-            android:textSize="34sp"
-            android:textStyle="bold"
+            android:textSize="26sp" android:textStyle="bold"
             android:textColor="#0288D1"
             android:gravity="center_vertical"/>
 
@@ -50,18 +47,14 @@
         android:layout_height="wrap_content"
         android:hint="Digite sua resposta"
         android:inputType="numberSigned"
-        android:textSize="24sp"
-        android:textColor="#0288D1"
+        android:textSize="20sp" android:textColor="#0288D1"
         android:gravity="center"
         android:layout_marginBottom="24dp"/>
 
     <Button
         android:id="@+id/btnResponder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Responder"
-        android:textSize="20sp"
-        android:backgroundTint="#0288D1"
+        android:layout_width="300dp" android:layout_height="52dp" android:text="Responder"
+        android:textSize="18sp" android:backgroundTint="#0288D1"
         android:textColor="@android:color/white"/>
 
 </LinearLayout>
