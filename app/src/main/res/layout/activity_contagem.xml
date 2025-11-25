@@ -50,11 +50,11 @@
 
     <ImageView
         android:id="@+id/ivImagem"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="382dp"
+        android:layout_height="229dp"
         android:layout_marginBottom="32dp"
         android:contentDescription="Imagem do desafio"
-        android:scaleType="fitCenter"/>
+        android:scaleType="fitCenter" />
 
     <Button
         android:id="@+id/btnOpcao1"

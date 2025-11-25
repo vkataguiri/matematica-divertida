@@ -17,15 +17,19 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_marginBottom="40dp"
-        android:layout_marginTop="32dp"  app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
-            android:layout_width="60dp"  android:layout_height="60dp" android:src="@drawable/icon_maior_numero"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_maior_numero"
             android:scaleType="centerInside"
             android:background="@drawable/circulo_azul"
-            android:padding="12dp"        android:layout_marginEnd="16dp"
+            android:padding="12dp"
+            android:layout_marginEnd="16dp"
             android:contentDescription="Ícone de Maior Número" />
 
         <TextView
@@ -33,7 +37,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Maior Número"
-            android:textSize="26sp" android:textStyle="bold"
+            android:textSize="26sp"
+            android:textStyle="bold"
             android:textColor="#0288D1"
             android:gravity="center_vertical"/>
 
@@ -44,9 +49,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Qual é o MAIOR número\nque você consegue formar?" android:textAlignment="center"
+        android:text="Qual é o MAIOR número\nque você consegue formar?"
+        android:textAlignment="center"
         android:textColor="#0277BD"
-        android:textSize="18sp" android:textStyle="bold"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headerContainer" />
@@ -126,7 +133,8 @@
         android:layout_height="wrap_content"
         android:hint="Digite sua resposta aqui"
         android:layout_marginTop="24dp"
-        app:hintTextColor="#000000"  app:boxCornerRadiusBottomEnd="12dp"
+        app:hintTextColor="#0288D1"
+        app:boxCornerRadiusBottomEnd="12dp"
         app:boxCornerRadiusBottomStart="12dp"
         app:boxCornerRadiusTopEnd="12dp"
         app:boxCornerRadiusTopStart="12dp"
@@ -143,7 +151,9 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:maxLength="3"
-            android:textSize="18sp" android:textAlignment="center"/>
+            android:textColor="#0288D1"
+            android:textSize="18sp"
+            android:textAlignment="center"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -153,9 +163,12 @@
         android:layout_marginTop="16dp"
         android:backgroundTint="#0288D1"
         android:text="VERIFICAR"
-        android:textSize="16sp" android:textStyle="bold"
-        android:textColor="@android:color/white" app:cornerRadius="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/tilResposta" app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:cornerRadius="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/tilResposta"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent="0.85" />
 
